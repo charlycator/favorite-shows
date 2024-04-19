@@ -1,10 +1,13 @@
+import {
+  TShow,
+  TShowsList,
+} from './types.ts';
+
 export interface ISearchInput {
   isRequired?: boolean
   label?: string,
   placeholder?: string,
-}
-
-export interface ISearchResults {
-  onSelect: (val: string) => void,
-  results: string[],
+  results?: TShowsList,
+  onSearch: (val: string) => void,
+  onSelect: (show: TShow) => void,
 }
