@@ -74,7 +74,7 @@ const SearchInput = ({
             <li
               key={`$show-${show.id}`}
               onClick={() => onSelectResult(show)}
-              className="pl-8 pr-2 py-3 border-b-1 border-indigo-100 relative cursor-pointer hover:bg-indigo-200 hover:text-gray-900">
+              className="pl-8 pr-2 py-3 text-black border-b-1 border-indigo-100 relative cursor-pointer hover:bg-indigo-200 hover:text-gray-900">
               {show.title}
             </li>
           ))
