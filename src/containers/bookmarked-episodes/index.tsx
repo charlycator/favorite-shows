@@ -15,7 +15,7 @@ const BookmarkedEpisodes = () => {
           <tr key={`episode-${episode.number}-${episode.id}`}>
             <td className="text-right">
               <div className="flex flex-col items-start gap-3">
-                <div className="text-sm opacity-50">{`Ep. ${index + 1} (${episode.released})`}</div>
+                <div className="text-sm opacity-50">{`S${episode.season} - Ep. ${index + 1} (${episode.released})`}</div>
                 <div className="font-bold">{episode.title}</div>
               </div>
             </td>
